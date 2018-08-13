@@ -2,6 +2,7 @@ package service;
 
 import dao.GoodsDAO;
 import entity.Goods;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -10,7 +11,7 @@ import java.util.List;
 @Service
 public class GoodsServiceImpl implements GoodsService {
     //自动装配
-    @Resource
+    @Autowired
     GoodsDAO goodsDao;
 
     //分页
